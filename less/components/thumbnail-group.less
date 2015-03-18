@@ -1,0 +1,38 @@
+.thumbnail-group {
+	width: 100%;
+	margin-left: -32px;
+}
+
+.thumbnail-group--item {
+	width: 33%;		
+	float: left;
+	section	{
+		padding-left: 32px;	
+		img{
+			width: 100%;
+		}
+	}
+	header > {
+		margin: 10px 0;
+		font-weight: bold;
+		font-size: 1.25em;
+	}
+}
+
+@media screen and (max-width: 766px){
+	.thumbnail-group--item {
+		width: 50%;		
+	}
+}
+
+@media screen and (max-width: 400px){
+	.thumbnail-group {
+		margin: 0;
+	}
+	.thumbnail-group--item {
+		width: 100%;
+		section	{
+			padding-left: 0 ;
+		}
+	}
+}

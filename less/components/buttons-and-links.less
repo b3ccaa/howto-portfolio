@@ -1,0 +1,36 @@
+.button {
+	padding: 8px 10px;
+	font-size: 16px;
+	color: white;
+	text-align: center;
+	border: 0;
+	border-radius: 6px;
+	cursor: pointer;
+	text-decoration: none;
+	display: inline-block;
+	.transition(all, .2s, ease);
+	&:hover {
+		color: white;
+	}
+	&.primary {
+		background: @theme-font-color;
+		&:hover {
+			background: @menu-bg-color-black;
+		}
+	}
+	&.secondary {
+		background: @menu-bg-color-grey;
+		&:hover {
+			background: @menu-bg-color-black;
+		}
+	}
+}
+
+a {
+	color: @font-black;
+	text-decoration: underline;
+	&:hover {
+		text-decoration: none;
+		color: @theme-font-color;
+	}
+}

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta content="telephone=no" name="format-detection">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/icon-fonts.css">
+	<title>Portfolio</title>
+</head>
+<body>
+	{{= it.include("partials/fullwidth-banner") }}
+	<div id="container">
+		{{= it.include("partials/nav") }}
+		<div class="wrapper">
+			{{= it.document }}
+		</div>
+	</div>
+	{{= it.include("partials/footer") }}
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="js/device.detector.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

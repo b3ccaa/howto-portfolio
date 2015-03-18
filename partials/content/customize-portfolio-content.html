@@ -1,0 +1,55 @@
+<section>
+	<header>
+		<h1>Customize the Portfolio</h1>
+		<p>
+			This responsive portfolio is ready to use and can easily be customized. Here, you find all what you need to create your own portfolio.
+		</p>
+	</header>
+	<article>
+		<h2>Folder Structure</h2>
+		<p>
+			After unzipping the project and running the <em>npm install</em> command you will have the following folder structure:
+			<div><img src="images/folder-structure.png"></div>
+		</p>
+	</article>
+	<article>
+		<h2>Writing Webpages</h2>
+		<p>
+			The given setup to create webpages supports you maintaining your portfolio in an easy way. <br>
+			In the folder structure mentioned above you find in <em>../templates</em> two created HTML templates. These templates include several "partials" which can be found in the folder with the same name. Partials are sections and areas of a webpage, such as the navigation and footer.
+		</p>
+		<p>
+			The advantage of this setup is the better maintainability and re-use of elements of the webpages. Imagine you want to change the navigation (on all pages). You only need to change one file and all HTML files will be generated automatically with the new navigation.
+		</p>
+		<p>
+			Before you create new pages and content you need to run the command <em>grunt watch</em> from the directory "howto_portfolio". Grunt notices if new files have been created or their content has been changed and then runs its task to create full HTML pages. This and other tasks are defined in <em><a href="http://gruntjs.com/sample-gruntfile">Gruntfile.js</a></em>. The generated .html files can be found in the folder <em>../dist</em>.
+		</p>
+		<p>
+			Keep in mind that you name the page files (in the pages folder) <em>pagename.dot.html</em>. If you forget the <em>.dot</em>, Grunt can't run the task to compile the HTML files.
+		</p>
+
+	</article>
+	<article>
+		<h2>Writing CSS</h2>
+		<p>
+			CSS styles your website. Just as we want to have better maintainability for the HTML, we also like to easily change CSS by keeping an overview. That's why we use <em>Less</em>, which enables also more than simple styles. You can for instance define your colors in a variable (variable.less), or write functions (mixins.less).
+		</p>
+		<p>
+			All .less files will be translated to a single .css file (style.css). <br>
+			You find all of the .less files in the <em>../less</em> folder. There you can see that the styles have been structured into components (e.g. nav.less)
+		</p>
+		<p>
+			Before you make changes in the .less files, you need to setup your Less compiler (e.g. WinLess). The target folder needs to be <em>../dist/css</em>.
+		</p>
+	</article>
+	<article>
+		<h2>Icon Fonts</h2>
+		<p>
+			Icon fonts help you creating re-usable and scalable icons without using images. You can even adjust the size and color by applying CSS without reducing the quality of the icon because it is a vector graphic.
+		</p>
+		<p>
+			In the folder structure you can find a folder called "icomoon-font". In there is a small set of icons that had been created for this responsible portfolio. If you like to add more icons, go to <a href="https://icomoon.io/app/#/select">Icomoon</a> and upload the file <em>selection.json</em> by clicking on "Import Icons".<br>
+			To use the icon-font, copy the font files to <em>../dist/css/fonts</em>, and copy and paste the content of the <em>style.css</em> in to <em>icon-fonts.css</em> which can be found in <em>../dist/css</em>.
+		</p>
+	</article>
+</section>
